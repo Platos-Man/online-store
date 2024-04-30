@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     #Project apps
     'core',
     'products',
+    'rest_framework',
     #Django apps
     'django.contrib.admin',
     'django.contrib.auth',
