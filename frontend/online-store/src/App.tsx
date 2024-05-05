@@ -1,8 +1,12 @@
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+import BaseLayout from "./layouts/BaseLayout";
+import Home from "./pages/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<h1>page</h1>}/>
+    <Route path='/' element={<BaseLayout />}>
+      <Route index element={<Home />} />
+    </Route>
 ))
 
 const App = () => {
