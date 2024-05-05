@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'core',
     'products',
     'rest_framework',
+    'drf_spectacular',
     #Django apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,6 +72,17 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'online_store API',
+    'DESCRIPTION': 'online store for buying products',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}
 
 WSGI_APPLICATION = 'online_store.wsgi.application'
 
