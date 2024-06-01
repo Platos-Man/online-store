@@ -1,16 +1,18 @@
 import { Outlet } from "react-router-dom";
-import Hearder from "../components/Header";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+interface BaseLayout {}
+
 const BaseLayout = () => {
-    return (
-        <>
-            <Hearder />
-            // sidebar?
-            <Outlet />
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      // sidebar?
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
 export default BaseLayout;
