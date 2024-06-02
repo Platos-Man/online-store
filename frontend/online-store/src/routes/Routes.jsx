@@ -8,7 +8,7 @@ import BaseLayout from "./layouts/BaseLayout";
 import Home from "./pages/Home";
 import { testLoader } from "./loaders";
 
-const Abc = () => {
+const Routes = () => {
   const router = () => {
     createBrowserRouter(
       createRoutesFromElements(
@@ -21,4 +21,4 @@ const Abc = () => {
   return <RouterProvider router={router} />;
 };
 
-export default Abc;
+export default Routes;

@@ -1,7 +1,7 @@
-import Abc from "./routes/Abc";
+import Routes from "./routes/Routes";
 
 const App = () => {
-  return <Abc />;
+  return <Routes />;
 };
 
 export default App;
